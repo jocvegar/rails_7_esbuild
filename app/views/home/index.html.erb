@@ -84,10 +84,15 @@
         </div>
       </div>
     </div>
-    <div class="mt-24 flex justify-center">
+    <div class="my-20 flex justify-center">
       <div id="box" class="w-32 h-32 bg-red-600"></div>
     </div>
-    <div class="mt-24 flex justify-center" data-controller="hello">
+    <div class="my-5 flex justify-center" data-controller="hello">
+    </div>
+    <div id="vue" class="my-5 flex justify-center">
+      <button v-on:click="reverseMessage" class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+        {{ message }}
+      </button>
     </div>
   </div>
 </section>
