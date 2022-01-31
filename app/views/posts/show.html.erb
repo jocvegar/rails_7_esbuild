@@ -1,7 +1,10 @@
-<p style="color: green"><%= notice %></p>
-<%= render @post %>
-<div>
-  <%= link_to "Edit this post", edit_post_path(@post) %> |
-  <%= link_to "Back to posts", posts_path %>
-  <%= button_to "Destroy this post", @post, method: :delete %>
+<div class="container bg-white p-2 rounded-md mt-2">
+  <div class="w-full bg-white rounded-md p-4 justify-start mt-2">
+    <%= render @post %>
+    <%= link_to 'Edit this post', edit_post_path(@post), class: "mt-2 rounded-lg p-2 bg-green-500 inline-block font-medium text-white" %>
+    <%= link_to "Back to posts", posts_path, class: "ml-2 rounded-lg p-2 bg-gray-300 inline-block font-medium" %>
+    <div class="inline-block ml-2">
+      <%= button_to 'Delete this post', post_path(@post), method: :delete, class: "mt-2 text-white rounded-lg p-2 bg-red-500 font-medium" %>
+    </div>
+  </div>
 </div>
