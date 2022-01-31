@@ -1,0 +1,10 @@
+<div id="<%= dom_id post %>">
+  <div class="bg-white w-full p-4 rounded-md mt-2">
+    <h3 class="my-5 text-lg font-bold text-gray-700  hover:text-blue-400">
+      <%= link_to post.title, post_path(post) %>
+    </h3>
+    <p class="my-5">
+      <%= post.content %>
+    </p>
+  </div>
+</div>

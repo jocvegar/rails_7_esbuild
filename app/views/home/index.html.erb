@@ -35,7 +35,8 @@
                 "> Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js. </p>
           <div class="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
             <div class="mt-3 rounded-lg sm:mt-0">
-              <button class="
+              <%= link_to posts_path do %>
+                <button class="
                       items-center
                       block
                       px-5
@@ -55,7 +56,8 @@
                       focus:ring-2
                       focus:ring-offset-2
                       focus:ring-blue-500
-                    "> Get bundle </button>
+                    "> Posts </button>
+              <% end %>
             </div>
             <div class="mt-3 rounded-lg sm:mt-0 sm:ml-3">
               <button class="
