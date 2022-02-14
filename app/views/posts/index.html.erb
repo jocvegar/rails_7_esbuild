@@ -3,9 +3,10 @@
   <div class="container flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
     <div class="flex flex-col w-full max-w-3xl mx-auto prose text-left prose-blue">
       <div class="w-full mx-auto">
-        <h2>A small headline to switch your visitors into users.</h2>
-        <p class="mb-10"> Right. Say that again. No, no, George, look, it's just an act, right? Okay, so 9:00 you're strolling through the parking. </p>
-        <%= link_to 'New post', new_post_path, class: "float-right rounded-lg py-3 px-5 bg-blue-600 text-white font-medium" %>
+        <h2 class="text-4xl my-6">A small headline to switch your visitors into users.</h2>
+        <p class="mb-10 text-lg"> Right. Say that again. No, no, George, look, it's just an act, right? Okay, so 9:00 you're strolling through the parking. </p>
+        <%= link_to 'New post', new_post_path, class: "float-right rounded-lg py-3 px-5 bg-blue-600 text-white font-medium ml-6" %>
+        <%= link_to 'Back', root_path, class: "float-right rounded-lg py-3 px-5 bg-gray-300 font-medium" %>
         <div id="posts" class="min-w-full">
           <% @posts.each do |post| %>
             <%= render post %>
