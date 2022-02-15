@@ -9,3 +9,6 @@ application.register("hello", HelloController);
 
 import MotionController from "./motion_controller.js";
 application.register("motion", MotionController);
+
+import VueController from "./vue_controller.js";
+application.register("vue", VueController);

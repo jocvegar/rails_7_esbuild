@@ -2,4 +2,3 @@
 import "@hotwired/turbo-rails";
 import "./controllers";
 // Hacerlo ahora con controllers
-import "./components/vue";
