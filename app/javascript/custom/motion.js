@@ -1,12 +1,18 @@
 import { animate } from "motion";
 
-animate(
-  "#box",
-  { rotate: 90 },
-  {
-    duration: 0.5,
-    easing: "ease-in-out",
-    repeat: Infinity,
-    direction: "alternate",
-  }
-);
+const motionBox = () => {
+  animate(
+    "#box",
+    { rotate: 90 },
+    {
+      duration: 0.5,
+      easing: "ease-in-out",
+      repeat: Infinity,
+      direction: "alternate",
+    }
+  );
+};
+
+document.addEventListener("turbo:load", function () {
+  motionBox();
+});
